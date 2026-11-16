@@ -1,0 +1,828 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="logo.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2f3529">
+<meta property="og:title" content="Pinewood Interiors & Spaces | Interior Designers in Bangalore">
+<meta property="og:description" content="Earthy, thoughtfully crafted home interiors in Bangalore. Personalised 3D designs, 45-day delivery, 10-year warranty.">
+<meta property="og:image" content="logo.png">
+<title>Pinewood Interiors & Spaces by MJS | Interior Designers in Bangalore</title>
+<meta name="description" content="Full home interiors, modular kitchens and wardrobes in Bangalore. Delivered in 45 days with a 10 year warranty.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#2b2a24; --muted:#6e6a5e; --bg:#f3efe8; --card:#fbf9f5; --line:#e2dbcf;
+  --brand:#4f5b46; --brand-dark:#3c4636; --wood:#9a6a3e; --soft:#e9e2d5; --dark:#2f3529;
+  --radius:16px; --shadow:0 10px 30px rgba(40,25,10,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:300;letter-spacing:.1px;-webkit-font-smoothing:antialiased;color:var(--ink);background:var(--bg);line-height:1.6}
+img{display:block;width:100%;height:100%;object-fit:cover;background:var(--soft)}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:Poppins,"Helvetica Neue",Helvetica,Arial,sans-serif;line-height:1.2;font-weight:500}
+h2{font-size:clamp(30px,4vw,46px);font-weight:300;text-align:center;margin-bottom:14px;letter-spacing:-1px;line-height:1.15}
+h2 em{font-style:normal;font-weight:500;color:var(--wood)}
+.kicker{display:block;text-align:center;font:500 11px Poppins,sans-serif;letter-spacing:3px;text-transform:uppercase;color:var(--wood);margin-bottom:14px}
+section,[id]{scroll-margin-top:76px}
+.sub{text-align:center;color:var(--muted);max-width:560px;margin:0 auto 48px;font-size:16px}
+section{padding:96px 0}
+.btn{display:inline-block;background:var(--brand);color:#fff;border:0;border-radius:999px;padding:14px 28px;font:500 15px "Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:.2px;cursor:pointer;transition:background .25s,color .25s,transform .25s,border-color .25s}
+.btn:hover{background:var(--brand-dark);transform:translateY(-1px)}
+.btn.ghost{background:transparent;border:1.5px solid var(--brand);color:var(--brand)}
+.btn.ghost:hover{background:var(--brand);color:#fff}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:2px solid var(--wood);outline-offset:3px}
+.btn[disabled]{opacity:.6;cursor:wait;transform:none}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(243,239,232,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{display:flex;align-items:center;gap:10px;font-family:Poppins,sans-serif}
+.logo img{width:auto;height:54px;object-fit:contain;background:none}
+footer .logo img{filter:drop-shadow(0 0 1px rgba(255,255,255,.55)) brightness(1.25)}
+.logo .lt{display:flex;flex-direction:column;line-height:1.1}
+.logo b{font-size:20px;font-weight:600;color:var(--brand);letter-spacing:.5px}
+.logo small{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--wood)}
+.hlogo b{font-size:19px;letter-spacing:.2px;white-space:nowrap}
+.hlogo .lt2{font-weight:300;color:var(--ink)}
+.hlogo .lt1{font-family:"Cormorant Garamond",Garamond,"Times New Roman",serif;font-weight:600;font-size:1.3em;letter-spacing:2.5px;color:#2f3529;line-height:1}
+.hlogo small{margin-top:3px;font-size:10px;letter-spacing:3px}
+@media (max-width:1100px){.hlogo b{font-size:16px}}
+@media (max-width:560px){.hlogo b{display:flex;flex-direction:column;font-size:11px;line-height:1.15}.hlogo .lt1{font-size:20px;letter-spacing:2px}.hlogo .lt2{letter-spacing:.5px}.hlogo small{font-size:8.5px;letter-spacing:2px;margin-top:2px}.logo img{height:42px}}
+footer .logo b{color:#fff}footer .logo small{color:#c9a57f}
+nav{display:flex;gap:28px;font-size:15px;font-weight:400}
+nav a:hover{color:var(--brand)}
+header .btn{padding:10px 22px;font-size:14px}
+nav a{position:relative;padding:4px 0}
+nav a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1px;background:var(--wood);transform:scaleX(0);transition:transform .3s}
+nav a:hover::after{transform:scaleX(1)}
+.menu-btn{display:none;width:42px;height:42px;border:1px solid var(--line);border-radius:50%;background:var(--card);cursor:pointer;margin-left:10px;position:relative}
+.menu-btn span,.menu-btn span::before,.menu-btn span::after{position:absolute;left:12px;width:16px;height:1.5px;background:var(--ink);content:"";transition:.3s}
+.menu-btn span{top:20px}.menu-btn span::before{left:0;top:-5px}.menu-btn span::after{left:0;top:5px}
+.nav-open .menu-btn span{background:transparent}.nav-open .menu-btn span::before{top:0;transform:rotate(45deg)}.nav-open .menu-btn span::after{top:0;transform:rotate(-45deg)}
+.h-right{display:flex;align-items:center}
+
+/* hero */
+.hero{position:relative;min-height:640px;display:flex;align-items:center;padding:60px 0;overflow:hidden;color:#fff}
+.slides{position:absolute;inset:0}
+.slides img{position:absolute;inset:0;opacity:0;transition:opacity 1.2s ease;transform:scale(1.05)}
+.slides img.on{opacity:1;animation:zoom 8s linear forwards}
+.slides img{filter:saturate(1.08) contrast(1.04)}
+.hero-ui{position:absolute;right:max(20px,calc((100vw - 1200px)/2 + 20px));bottom:28px;z-index:3;display:flex;align-items:center;gap:18px}
+.hero-cap{font:500 11px Poppins,sans-serif;letter-spacing:3px;text-transform:uppercase;color:#efe6d8;padding:8px 14px;border:1px solid rgba(239,230,216,.35);border-radius:999px;background:rgba(30,35,25,.35);backdrop-filter:blur(6px);transition:opacity .4s}
+.hero-dots{display:flex;gap:8px}
+.hero-dots button{width:26px;height:3px;border:0;padding:0;border-radius:3px;background:rgba(255,255,255,.35);cursor:pointer;position:relative;overflow:hidden}
+.hero-dots button.on::after{content:"";position:absolute;inset:0;background:#d9bf9c;transform-origin:left;animation:hbar 6s linear forwards}
+@keyframes hbar{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media (max-width:960px){.hero-ui{display:none}}
+@keyframes zoom{to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(30,34,26,.88) 0%,rgba(30,34,26,.55) 45%,rgba(30,34,26,.2) 100%),linear-gradient(0deg,rgba(30,34,26,.5),transparent 35%)}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.2fr .9fr;gap:48px;align-items:center;width:100%}
+.eyebrow{display:flex;align-items:center;gap:14px;font:500 12px/1 Poppins,sans-serif;letter-spacing:4px;text-transform:uppercase;color:#d9bf9c;margin-bottom:26px}
+.eyebrow::before{content:"";width:44px;height:1px;background:#d9bf9c}
+.hero h1{font-family:Poppins,sans-serif;font-weight:200;font-size:clamp(36px,4.6vw,62px);line-height:1.08;letter-spacing:-1.5px;margin-bottom:24px}
+.hero h1 strong{display:block;font-weight:600;letter-spacing:-1.8px}
+.hero h1 em{font-style:normal;font-weight:300;color:#d9bf9c}
+.hero-lead{font-size:17px;font-weight:300;opacity:.85;max-width:460px;line-height:1.7;padding-left:18px;border-left:1px solid rgba(217,191,156,.6)}
+.badges{display:flex;gap:10px;margin-top:28px;flex-wrap:wrap}
+.badges div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.2);padding:8px 16px;border-radius:999px;font-size:12px;letter-spacing:1px;text-transform:uppercase;font-weight:400}
+.form-card{background:#fff;color:var(--ink);border-radius:20px;padding:32px;box-shadow:0 20px 50px rgba(0,0,0,.25)}
+.form-card h3{font-size:24px;margin-bottom:6px}
+.form-card p.small{color:var(--muted);font-size:14px;margin-bottom:20px}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:13px;font-weight:400;margin-bottom:6px}
+.field input,.field select{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;font:15px "Helvetica Neue",Helvetica,Arial,sans-serif;background:#fff}
+.field input:focus,.field select:focus{outline:none;border-color:var(--brand)}
+.form-card .btn{width:100%;margin-top:6px}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.field input.bad,.field select.bad{border-color:#b5523a}
+.ferr{color:#b5523a;font-size:13px;min-height:0;margin:-4px 0 8px}
+.ferr:empty{display:none}
+.legal{font-size:12px;color:var(--muted);margin-top:12px;text-align:center}
+.legal a{color:var(--brand)}
+.ok{display:none;text-align:center;padding:30px 0}
+.ok b{font-size:22px;font-family:Poppins,sans-serif;display:block;margin-bottom:6px}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:30px 12px;text-align:center;transition:border-color .3s,transform .3s}
+.stat:hover{border-color:var(--wood);transform:translateY(-3px)}
+.stat b{display:block;font:300 38px/1.2 Poppins,sans-serif;color:var(--brand);letter-spacing:-1px}
+.stat span{font-size:14px;color:var(--muted)}
+
+/* cards */
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:var(--card);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:.25s}
+.card:hover{transform:translateY(-4px)}
+.card .img{aspect-ratio:4/3;overflow:hidden}
+.card .img img{transition:transform .5s}
+.card:hover .img img{transform:scale(1.06)}
+.card .body{padding:18px 20px}
+.card h3{font-size:19px;font-weight:500}
+.card{border:1px solid var(--line)}
+.card:hover{box-shadow:0 18px 40px rgba(40,45,30,.12)}
+.price{color:var(--muted);font-size:14px}
+.price b{color:var(--wood);font-size:18px}
+.center{text-align:center;margin-top:36px}
+/* 3d carousel */
+#designs{overflow:hidden}
+html,body{overflow-x:clip}
+.c3d{position:relative;height:520px;perspective:1400px;user-select:none;touch-action:pan-y}
+.c3d-track{position:relative;width:100%;height:100%;transform-style:preserve-3d}
+.c3d-card{position:absolute;top:0;left:50%;width:340px;height:460px;margin-left:-170px;border-radius:22px;overflow:hidden;cursor:pointer;
+  transition:transform .8s cubic-bezier(.22,.8,.25,1),opacity .8s,filter .8s;box-shadow:0 30px 60px rgba(30,35,25,.28);background:var(--soft)}
+.c3d-card img{pointer-events:none}
+.c3d-card::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(25,30,20,.85))}
+.c3d-card .cap{position:absolute;left:24px;right:24px;bottom:22px;z-index:2;color:#fff;transition:opacity .5s,transform .5s}
+.c3d-card .cap small{display:block;font:500 11px Poppins,sans-serif;letter-spacing:3px;text-transform:uppercase;color:#d9bf9c;margin-bottom:6px}
+.c3d-card .cap h3{font-family:Poppins,sans-serif;font-weight:300;font-size:26px;letter-spacing:-.5px}
+.c3d-card .cap p{font-size:13px;opacity:.8;margin-top:6px;max-height:0;overflow:hidden;transition:max-height .6s}
+.c3d-card.active .cap p{max-height:60px}
+.c3d-card:not(.active) .cap{opacity:0;transform:translateY(10px)}
+.c3d-nav{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:10px}
+.c3d-nav button.arr{width:48px;height:48px;border-radius:50%;border:1px solid var(--line);background:var(--card);font-size:20px;color:var(--brand);cursor:pointer;transition:.2s}
+.c3d-nav button.arr:hover{background:var(--brand);color:#fff;border-color:var(--brand)}
+.c3d-dots{display:flex;gap:8px}
+.c3d-dots button{width:8px;height:8px;border-radius:99px;border:0;background:#cdbfa9;cursor:pointer;transition:.3s;padding:0}
+.c3d-dots button.on{width:28px;background:var(--wood)}
+@media (max-width:560px){.c3d{height:420px}.c3d-card{width:250px;height:360px;margin-left:-125px}}
+
+/* tiers */
+.alt{background:var(--soft)}
+.tiers{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;align-items:stretch}
+.tier{position:relative;display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:30px 26px 28px;transition:transform .35s,box-shadow .35s,border-color .35s}
+.tier:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:var(--wood)}
+.tier.top{background:var(--dark);border-color:var(--dark);color:#efe9df}
+.tier .no{font:500 11px Poppins,sans-serif;letter-spacing:3px;color:var(--wood)}
+.tier.top .no{color:#d9bf9c}
+.tier .rec{position:absolute;top:-12px;right:22px;background:#d9bf9c;color:#2b2a24;font:500 10px Poppins,sans-serif;letter-spacing:1.5px;text-transform:uppercase;padding:5px 12px;border-radius:999px;box-shadow:0 6px 16px rgba(30,35,25,.18)}
+.tier h3{font:300 30px/1.1 Poppins,sans-serif;letter-spacing:-.5px;margin:14px 0 6px}
+.tier .lvl{font-size:14px;color:var(--muted);margin-bottom:22px}
+.tier.top .lvl{color:#bdb6a8}
+.tier dl{display:flex;flex-direction:column;margin:0 0 26px;flex-grow:1}
+.tier dl div{padding:14px 0;border-top:1px solid var(--line)}
+.tier.top dl div{border-top-color:rgba(255,255,255,.12)}
+.tier dt{font:500 10px Poppins,sans-serif;letter-spacing:2.5px;text-transform:uppercase;color:#a89c88;margin-bottom:4px}
+.tier dd{margin:0;font:400 15px/1.4 Poppins,sans-serif;color:var(--ink);display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.tier.top dd{color:#fff}
+.tier dd .up{flex-shrink:0;font:500 9px Poppins,sans-serif;letter-spacing:1.5px;text-transform:uppercase;color:var(--wood);border:1px solid rgba(154,106,62,.45);border-radius:999px;padding:3px 8px;margin-top:2px}
+.tier.top dd .up{color:#d9bf9c;border-color:rgba(217,191,156,.5)}
+.tier .btn{width:100%;text-align:center}
+.tier.top .btn{background:#d9bf9c;color:#2b2a24}.tier.top .btn:hover{background:#c9ab83}
+.tiers-note{text-align:center;color:var(--muted);font-size:14px;margin-top:26px}
+.tiers-note b{font:500 9px Poppins,sans-serif;letter-spacing:1.5px;text-transform:uppercase;color:var(--wood);border:1px solid rgba(154,106,62,.45);border-radius:999px;padding:3px 8px;margin:0 4px}
+
+/* offerings */
+.offer{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;align-items:stretch}
+.ocard{position:relative;overflow:hidden;display:flex;flex-direction:column;min-height:380px;padding:28px;border-radius:20px;border:1px solid var(--line);background:#fff;
+  transition:transform .5s cubic-bezier(.22,.8,.25,1),box-shadow .5s,border-color .5s}
+.ocard .bgi{position:absolute;inset:0;z-index:0}
+.ocard .bgi img{opacity:.92;filter:saturate(1.05);transition:opacity .6s,transform 1.2s cubic-bezier(.22,.8,.25,1)}
+.ocard .bgi::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(251,249,245,0) 0%,rgba(251,249,245,0) 28%,rgba(251,249,245,.88) 52%,#fbf9f5 66%)}
+.ocard:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--wood)}
+.ocard:hover .bgi img{opacity:1;transform:scale(1.06)}
+.ocard>*:not(.bgi){position:relative;z-index:1}
+.ocard .num{font:500 12px Poppins,sans-serif;letter-spacing:3px;color:var(--brand);background:rgba(255,255,255,.85);align-self:flex-start;padding:6px 12px;border-radius:999px}
+.ocard .grow{flex:1}
+.offer h3{font-family:Poppins,sans-serif;font-weight:500;font-size:19px;line-height:1.25;margin-bottom:8px;min-height:72px;display:flex;align-items:flex-end}
+@media (max-width:560px){.offer h3{min-height:0}.offer p.lead{min-height:0}.ocard{min-height:300px}}
+.offer p.lead{font-size:14px;color:var(--muted);min-height:66px}
+.ocard .olist{display:none}
+.more{margin-top:18px;align-self:flex-start;background:none;border:0;border-bottom:1px solid var(--wood);padding:0 0 4px;cursor:pointer;font:500 12px Poppins,sans-serif;letter-spacing:2px;text-transform:uppercase;color:var(--brand);display:inline-flex;align-items:center;gap:10px;transition:gap .3s,color .3s}
+.more:hover{gap:16px;color:var(--wood)}
+/* offer modal */
+.omodal{margin:auto;border:0;padding:0;border-radius:24px;width:min(560px,calc(100% - 32px));max-height:calc(100vh - 60px);background:var(--card);color:var(--ink);box-shadow:0 40px 80px rgba(20,25,15,.35);overflow:hidden}
+.omodal::backdrop{background:rgba(30,35,25,.55);backdrop-filter:blur(4px)}
+.omodal[open]{animation:mIn .5s cubic-bezier(.22,.8,.25,1)}
+.omodal[open]::backdrop{animation:fIn .4s ease}
+@keyframes mIn{from{opacity:0;transform:translateY(30px) scale(.96)}}
+@keyframes fIn{from{opacity:0}}
+.omodal .mhead{position:relative;height:160px}
+.omodal .mhead::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 20%,rgba(25,30,20,.8))}
+.omodal .mhead h3{position:absolute;left:28px;bottom:20px;z-index:1;color:#fff;font:400 24px Poppins,sans-serif}
+.omodal .mhead small{display:block;font:500 11px Poppins,sans-serif;letter-spacing:3px;color:#d9bf9c;text-transform:uppercase}
+.omodal .x{position:absolute;top:14px;right:14px;z-index:2;width:38px;height:38px;border-radius:50%;border:0;background:rgba(255,255,255,.9);font-size:20px;cursor:pointer;color:var(--ink)}
+.omodal .mbody{padding:10px 28px 24px;overflow-y:auto;max-height:calc(100vh - 240px)}
+.omodal ol{list-style:none;counter-reset:o}
+.omodal li{counter-increment:o;position:relative;padding:14px 0 14px 40px;border-bottom:1px dashed var(--line);opacity:0;animation:liIn .5s forwards}
+.omodal li:last-child{border-bottom:0}
+.omodal li::before{content:counter(o,decimal-leading-zero);position:absolute;left:0;top:15px;font:500 13px Poppins,sans-serif;color:var(--wood)}
+.omodal li b{display:block;font:500 15px Poppins,sans-serif}
+.omodal li span{font-size:14px;color:var(--muted)}
+@keyframes liIn{from{opacity:0;transform:translateX(-10px)}to{opacity:1;transform:none}}
+
+/* tabs gallery */
+.tabs-wrap{display:flex;justify-content:center;margin-bottom:34px}
+.tabs{position:relative;display:inline-flex;gap:4px;padding:6px;background:#fff;border:1px solid var(--line);border-radius:999px;box-shadow:0 6px 20px rgba(40,45,30,.06);max-width:100%;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs .pill{position:absolute;top:6px;bottom:6px;left:0;border-radius:999px;background:var(--brand);transition:transform .5s cubic-bezier(.65,0,.35,1),width .5s cubic-bezier(.65,0,.35,1);z-index:0}
+.tabs button{position:relative;z-index:1;border:0;background:none;padding:11px 22px;border-radius:999px;font:400 15px "Helvetica Neue",Helvetica,Arial,sans-serif;color:var(--muted);cursor:pointer;white-space:nowrap;transition:color .4s}
+.tabs button.on{color:#fff}
+.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:240px 240px;gap:14px}
+.gtile{position:relative;border-radius:var(--radius);overflow:hidden;background:var(--soft);
+  transition:opacity .55s ease,transform .7s cubic-bezier(.22,.8,.25,1),clip-path .8s cubic-bezier(.65,0,.35,1);clip-path:inset(0 0 0 0 round 16px)}
+.gtile.out{opacity:0;transform:translateY(18px) scale(.97);clip-path:inset(0 0 100% 0 round 16px)}
+.gtile img{transition:transform 1.2s cubic-bezier(.22,.8,.25,1)}
+.gtile:hover img{transform:scale(1.07)}
+.gtile::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(25,30,20,.65));opacity:0;transition:opacity .5s}
+.gtile:hover::after{opacity:1}
+.gtile .tag{position:absolute;left:18px;bottom:16px;z-index:2;color:#fff;font:300 17px Poppins,sans-serif;opacity:0;transform:translateY(10px);transition:.5s}
+.gtile .tag small{display:block;font:500 10px Poppins,sans-serif;letter-spacing:3px;text-transform:uppercase;color:#d9bf9c}
+.gtile:hover .tag{opacity:1;transform:none}
+.gallery .gtile:first-child{grid-row:span 2}
+.gallery .gtile:first-child .tag{opacity:1;transform:none;font-size:22px}
+.gallery .gtile:first-child::after{opacity:1}
+
+/* steps */
+/* steps timeline */
+.st-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:20px}
+.st-head h2{text-align:left;font-weight:300;font-size:clamp(30px,4vw,48px);letter-spacing:-1px;margin:0;max-width:560px}
+.st-head h2::after{display:none}
+.st-head h2 em{font-style:normal;font-weight:500;color:var(--wood)}
+.st-head p{color:var(--muted);max-width:300px;font-size:15px}
+.st-track{position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:34px;align-items:start;padding:40px 0 50px}
+.st-svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+.st-svg path{fill:none;stroke:#8c8574;stroke-width:1.2;stroke-dasharray:var(--len);stroke-dashoffset:var(--len);transition:stroke-dashoffset 1.1s cubic-bezier(.65,0,.35,1)}
+.st-svg circle{fill:var(--wood);transform-box:fill-box;transform-origin:center;transform:scale(0);transition:transform .5s cubic-bezier(.34,1.56,.64,1)}
+.st-svg circle.halo{fill:var(--wood);opacity:.18}
+.st-on .st-svg path{stroke-dashoffset:0}
+.st-on .st-svg circle{transform:scale(1)}
+.st-card{position:relative;z-index:1;min-height:300px;background:#fff;border-radius:22px;padding:30px 24px;box-shadow:0 14px 40px rgba(40,45,30,.07);
+  opacity:0;transform:translateY(40px);transition:opacity .8s,transform .9s cubic-bezier(.22,.8,.25,1),box-shadow .4s}
+.st-card:nth-child(odd){margin-top:150px}
+.st-on .st-card{opacity:1;transform:none}
+.st-card:hover{box-shadow:0 24px 50px rgba(40,45,30,.14);transform:translateY(-6px)}
+.st-card .n{font:300 64px/1 Poppins,sans-serif;color:#d9c9b4;letter-spacing:-2px;margin-bottom:18px;transition:color .4s}
+.st-card:hover .n{color:var(--wood)}
+.st-card h3{font:400 20px Poppins,sans-serif;letter-spacing:-.4px;margin-bottom:14px}
+.st-card p{font-size:14px;color:var(--muted);line-height:1.65}
+.st-prog{position:relative;height:1px;background:#cfc6b6;margin:0}
+.st-done .st-prog span{width:100%}.st-done .st-prog i{left:100%}
+.st-prog span{position:absolute;left:0;top:-1px;height:3px;background:var(--wood);border-radius:3px;width:0;transition:width 2.4s cubic-bezier(.65,0,.35,1) .3s}
+.st-prog i{position:absolute;top:-6px;left:0;transition:left 2.4s cubic-bezier(.65,0,.35,1) .3s;width:13px;height:13px;border-radius:50%;background:var(--wood);margin-left:-6px;box-shadow:0 0 0 5px rgba(154,106,62,.18)}
+@media (max-width:1100px){.st-track{gap:22px}.st-card{padding:26px 18px}.st-card .n{font-size:52px}.st-card h3{font-size:18px}}
+@media (max-width:900px){.st-head{flex-direction:column;align-items:flex-start}
+ .st-track{grid-template-columns:1fr;gap:56px;padding:30px 0 40px}
+ .st-card{width:86%;min-height:0;padding:28px 24px}.st-card:nth-child(odd){margin-top:0;justify-self:end}
+ .st-card .n{font-size:56px}}
+
+/* testimonials */
+/* reviews spotlight */
+.rv-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:44px}
+.rv-head h2{text-align:left;font-weight:300;font-size:clamp(30px,4vw,46px);letter-spacing:-1px;margin:0}
+.rv-head h2::after{display:none}
+.rv-head h2 em{font-style:normal;font-weight:500;color:var(--wood)}
+.rv-score{display:flex;align-items:center;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px 20px}
+.rv-score b{font:300 40px/1 Poppins,sans-serif;color:var(--brand)}
+.rv-score .stars{font-size:15px}
+.rv-score small{display:block;color:var(--muted);font-size:13px}
+.stars{color:var(--wood);letter-spacing:2px}
+.rv{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
+.rv-q{position:relative;min-height:330px;display:flex;flex-direction:column}
+.rv-q .mark{font:600 140px/0.7 Poppins,sans-serif;color:var(--wood);opacity:.22;height:70px;margin-bottom:6px}
+.rv-text{font:300 clamp(21px,2.3vw,28px)/1.5 Poppins,sans-serif;color:var(--ink);letter-spacing:-.3px;min-height:170px}
+.rv-text .w{display:inline-block;opacity:0;transform:translateY(14px);filter:blur(4px);animation:wIn .6s cubic-bezier(.22,.8,.25,1) forwards}
+@keyframes wIn{to{opacity:1;transform:none;filter:none}}
+.rv-who{display:flex;align-items:center;gap:14px;margin-top:22px;opacity:0;transform:translateY(10px);transition:.6s .2s}
+.rv-who.on{opacity:1;transform:none}
+.rv-av{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;background:var(--brand);color:#fff;font:500 16px Poppins,sans-serif}
+.rv-who b{display:block;font:500 16px Poppins,sans-serif}
+.rv-who span{font-size:13px;color:var(--muted)}
+.rv-nav{display:flex;gap:10px;margin-top:34px;flex-wrap:wrap}
+.rv-nav button{position:relative;overflow:hidden;display:flex;align-items:center;gap:10px;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 16px 6px 6px;cursor:pointer;font:400 13px "Helvetica Neue",Helvetica,Arial,sans-serif;color:var(--muted);transition:border-color .3s,color .3s}
+.rv-nav button i{font-style:normal;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--soft);color:var(--brand);font:500 12px Poppins,sans-serif;transition:.3s}
+.rv-nav button.on{border-color:var(--wood);color:var(--ink)}
+.rv-nav button.on i{background:var(--wood);color:#fff}
+.rv-nav button::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:100%;background:var(--wood);transform:scaleX(0);transform-origin:left}
+.rv-nav button.on::after{animation:rvbar var(--dur,7s) linear forwards}
+.rv.paused .rv-nav button.on::after{animation-play-state:paused}
+@keyframes rvbar{to{transform:scaleX(1)}}
+.rv-pic{position:relative;aspect-ratio:4/4.3;border-radius:28px}
+.rv-frame{position:absolute;inset:0;border-radius:28px;overflow:hidden;box-shadow:0 30px 60px rgba(40,45,30,.18)}
+.rv-frame img{position:absolute;inset:0;clip-path:circle(0% at 85% 15%);transform:scale(1.12);transition:clip-path 1.2s cubic-bezier(.65,0,.35,1),transform 2.4s cubic-bezier(.22,.8,.25,1)}
+.rv-frame img.on{clip-path:circle(150% at 85% 15%);transform:scale(1);z-index:2}
+.rv-frame img.prev{clip-path:circle(150% at 85% 15%);transform:scale(1);z-index:1}
+.rv-pic::before{content:"";position:absolute;inset:-18px -18px 18px 18px;border:1px solid var(--wood);border-radius:32px;opacity:.35}
+.rv-tag{position:absolute;left:-26px;bottom:34px;z-index:3;background:var(--card);border-radius:18px;padding:16px 20px;box-shadow:0 20px 40px rgba(40,45,30,.15);min-width:210px;transition:opacity .5s,transform .6s cubic-bezier(.22,.8,.25,1)}
+.rv-tag.out{opacity:0;transform:translateY(16px)}
+.rv-tag small{display:block;font:500 10px Poppins,sans-serif;letter-spacing:2.5px;text-transform:uppercase;color:var(--wood);margin-bottom:4px}
+.rv-tag b{font:500 17px Poppins,sans-serif;display:block}
+.rv-tag span{font-size:13px;color:var(--muted)}
+.rv-count{position:absolute;right:22px;top:20px;z-index:3;font:500 12px Poppins,sans-serif;letter-spacing:2px;color:#fff;background:rgba(30,35,25,.45);backdrop-filter:blur(6px);padding:7px 12px;border-radius:999px}
+@media (max-width:900px){.rv-q .mark{font-size:100px;height:46px}.rv{grid-template-columns:1fr;gap:48px}.rv-pic{order:-1;aspect-ratio:4/3;margin:0 10px 0 18px}.rv-tag{left:-10px;bottom:-22px;min-width:0;padding:10px 14px;border-radius:14px}.rv-tag b{font-size:15px}.rv-q{min-height:0}.rv-text{min-height:0}
+ .rv-head{flex-direction:column;align-items:flex-start}}
+
+/* partners */
+/* materials */
+.mat{background:var(--card);padding:100px 0 90px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden}
+.mat-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:48px}
+.mat-head small{display:block;font:500 11px Poppins,sans-serif;letter-spacing:3px;text-transform:uppercase;color:var(--wood);margin-bottom:16px}
+.mat-head h2{text-align:left;font-weight:300;font-size:clamp(30px,3.6vw,44px);letter-spacing:-1px;line-height:1.15;margin:0}
+.mat-head h2::after{display:none}
+.mat-head p{color:var(--muted);font-size:15px;max-width:330px}
+.mflow{-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.mflow-row{display:flex;gap:18px;width:max-content;animation:mflow 70s linear infinite;padding:12px 0}
+.mflow:hover .mflow-row{animation-play-state:paused}
+@keyframes mflow{to{transform:translateX(calc(-50% - 9px))}}
+.mcard{position:relative;flex:0 0 220px;height:280px;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:#fff;display:flex;flex-direction:column;justify-content:flex-end;padding:20px;transition:transform .5s cubic-bezier(.22,.8,.25,1),border-color .4s}
+.mcard img{position:absolute;inset:0;opacity:.88;transition:opacity .6s,transform 1.2s cubic-bezier(.22,.8,.25,1)}
+.mcard::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(251,249,245,0) 0%,rgba(251,249,245,.1) 42%,rgba(251,249,245,.9) 68%,#fbf9f5 84%)}
+.mcard>*:not(img){position:relative;z-index:2}
+.mcard .no{position:absolute;top:18px;left:20px;font:400 12px Poppins,sans-serif;color:var(--ink);opacity:.6}
+.mcard b{font:400 17px Poppins,sans-serif;color:var(--ink);line-height:1.3}
+.mcard span{font-size:13px;color:var(--muted);margin-top:4px}
+.mcard:hover{transform:translateY(-4px);border-color:var(--wood)}
+.mcard:hover img{opacity:1;transform:scale(1.06)}
+@media (prefers-reduced-motion:reduce){.mflow-row{animation:none}}
+@media (max-width:760px){.mat{padding:70px 0}.mat-head{flex-direction:column;align-items:flex-start;gap:14px;margin-bottom:34px}.mcard{flex-basis:180px;height:240px}}
+
+/* brand logos marquee */
+.brands{margin-top:80px}
+.brands-head{display:flex;align-items:center;gap:18px;margin-bottom:28px}
+.brands-head span{font:500 11px Poppins,sans-serif;letter-spacing:3px;text-transform:uppercase;color:var(--wood);white-space:nowrap}
+.brands-head::after{content:"";flex:1;height:1px;background:var(--line)}
+.bq{-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.bq-row{display:flex;width:max-content;animation:bq 45s linear infinite reverse;padding:12px 0}
+.bq:hover .bq-row{animation-play-state:paused}
+.bq-set{display:flex;gap:18px;padding-right:18px}
+@keyframes bq{to{transform:translateX(-50%)}}
+.blogo{flex:0 0 190px;height:120px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:16px;transition:border-color .4s,transform .4s}
+.blogo img{width:auto;height:46px;max-width:140px;object-fit:contain;background:none;filter:grayscale(1);opacity:.7;transition:filter .4s,opacity .4s}
+.blogo span{font:500 10px Poppins,sans-serif;letter-spacing:2px;text-transform:uppercase;color:#b0a593}
+.blogo:hover{border-color:var(--wood);transform:translateY(-3px)}
+.blogo:hover img{filter:none;opacity:1}
+@media (prefers-reduced-motion:reduce){.bq-row{animation:none}}
+@media (max-width:760px){.brands{margin-top:56px}.blogo{flex-basis:150px;height:100px}.blogo img{height:38px;max-width:112px}}
+/* faq */
+.faq{max-width:820px;margin:0 auto}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:12px;padding:0 24px;transition:border-color .3s}
+details[open]{border-color:var(--wood)}
+summary{cursor:pointer;padding:20px 0;font:400 16px Poppins,sans-serif;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--wood);font-size:22px;line-height:1;transition:transform .3s}
+details[open] summary::after{content:"−"}
+details p{padding-bottom:18px;color:var(--muted)}
+
+/* cta + footer */
+.cta{position:relative;overflow:hidden;background:var(--dark);color:#fff;border-radius:28px;padding:72px 40px;text-align:center}
+.cta::before{content:"";position:absolute;inset:0;background:url("https://images.unsplash.com/photo-1615529182904-14819c35db37?w=1600&q=70&auto=format") center/cover;opacity:.18}
+.cta>*{position:relative}
+.cta h2{color:#fff}
+.cta h2 em{color:#d9bf9c}
+.cta .kicker{color:#d9bf9c}
+.cta p{opacity:.8;margin-bottom:24px}
+.cta .btn,.float{background:var(--wood)}.cta .btn:hover,.float:hover{background:#7d5530}
+footer{background:var(--dark);color:#cfcabe;padding:70px 0 26px;margin-top:0}
+.cta-wrap{padding:96px 0;background:var(--bg)}
+footer .cols{display:grid;grid-template-columns:1.8fr 1fr 1fr auto;gap:32px}
+footer h4{color:#d9bf9c;margin-bottom:14px;font:500 11px Poppins,sans-serif;letter-spacing:3px;text-transform:uppercase}
+footer li{list-style:none;margin:6px 0;font-size:14px}
+footer a{transition:color .2s}footer a:hover{color:#fff}
+footer a[href^="mailto:"]{white-space:nowrap}
+footer .logo{color:#fff;margin-bottom:10px}
+footer .copy{border-top:1px solid #454c3e;margin-top:40px;padding-top:20px;font-size:13px;text-align:center}
+.float{position:fixed;right:20px;bottom:20px;z-index:60;box-shadow:0 10px 30px rgba(0,0,0,.25);transition:opacity .35s,transform .35s,background .25s}
+.float.hide{opacity:0;transform:translateY(20px);pointer-events:none}
+
+.reveal{opacity:0;transform:translateY(24px);transition:.7s ease}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:960px){
+  .menu-btn{display:block}
+  nav{position:absolute;top:70px;left:0;right:0;flex-direction:column;gap:0;background:var(--card);border-bottom:1px solid var(--line);padding:6px 20px 14px;transform:translateY(-8px);opacity:0;pointer-events:none;transition:.3s;box-shadow:0 20px 30px rgba(40,45,30,.08)}
+  nav a{padding:14px 0;border-bottom:1px solid var(--line)}nav a:last-child{border-bottom:0}nav a::after{display:none}
+  .nav-open nav{transform:none;opacity:1;pointer-events:auto}
+  .hero .wrap{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .grid4,.offer{grid-template-columns:repeat(2,1fr)}
+  .tiers{grid-template-columns:repeat(2,minmax(0,1fr))}
+  footer .cols{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  footer .cols{grid-template-columns:1fr;gap:28px}
+}
+@media (max-width:560px){
+  section{padding:56px 0}
+  .wrap{padding:0 16px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .grid4,.offer{grid-template-columns:1fr}
+  .tiers{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr 1fr;grid-template-rows:200px 140px 140px}
+  .gallery .gtile:first-child{grid-column:span 2;grid-row:auto}
+  .tabs-wrap{justify-content:flex-start}
+  .cta{padding:36px 20px}
+  header .btn{padding:8px 14px;font-size:13px}
+  .logo img{height:44px}.logo b{font-size:17px}.logo small{font-size:9px;letter-spacing:1.5px}
+  .h-right .btn{display:none}
+  .form-card{padding:24px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="#" class="logo hlogo"><img src="logo.png" alt="Pinewood Interiors &amp; Spaces logo"><span class="lt"><b><span class="lt1">PINEWOOD</span> <span class="lt2">Interiors &amp; Spaces</span></b><small>by MJS</small></span></a>
+    <nav>
+      <a href="#homes">Homes</a><a href="#designs">Designs</a><a href="#packages">Packages</a><a href="#process">Process</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a>
+    </nav>
+    <div class="h-right"><a href="#quote" class="btn">Get a Free Quote</a><button class="menu-btn" aria-label="Open menu" aria-expanded="false"><span></span></button></div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="quote">
+  <div class="slides">
+    <img class="on" src="https://images.unsplash.com/photo-1615874694520-474822394e73?w=2200&q=80&auto=format" alt="Living room with built-in shelves and fireplace" data-cap="Living Room">
+    <img src="https://images.unsplash.com/photo-1615529182904-14819c35db37?w=2200&q=80&auto=format" alt="Earthy living room with rattan lights" data-cap="Earthy Living">
+    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=2200&q=80&auto=format" alt="Open-plan living with wood-panel wall" data-cap="Open-Plan Living">
+    <img src="https://images.unsplash.com/photo-1617104678098-de229db51175?w=2200&q=80&auto=format" alt="Master bedroom with dark accent wall" data-cap="Master Bedroom">
+    <img src="https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?w=2200&q=80&auto=format" alt="L-shaped modular kitchen" data-cap="Modular Kitchen">
+  </div>
+  <div class="hero-ui"><span class="hero-cap" id="heroCap">Living Room</span><div class="hero-dots" id="heroDots"></div></div>
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Pinewood · Interior Design Studio</div>
+      <h1>Best Interior <strong>Designers</strong> <em>in Bangalore</em></h1>
+      <p class="hero-lead">Beautiful, functional homes designed around you. Delivered in 45 days with a 10-year warranty.</p>
+      <div class="badges"><div>★ 4.8 Customer Rating</div><div>45-Day Delivery</div><div>10-Year Warranty</div></div>
+    </div>
+    <div class="form-card">
+      <form class="lead" id="leadForm" novalidate>
+        <h3>Get a Free Quote</h3>
+        <p class="small">Talk to a designer today. No obligation.</p>
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none">
+        <div class="field"><label for="fName">Name</label><input id="fName" name="Name" required autocomplete="name" placeholder="Your name"></div>
+        <div class="field"><label for="fPhone">Mobile Number</label><input id="fPhone" name="Mobile" required type="tel" inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10" autocomplete="tel-national" placeholder="10-digit mobile"></div>
+        <div class="field-row">
+          <div class="field"><label for="fPin">Property Pincode</label><input id="fPin" name="Pincode" required inputmode="numeric" pattern="56[0-9]{4}" maxlength="6" placeholder="e.g. 560034"></div>
+          <div class="field"><label for="fType">Home Type</label><select id="fType" name="Home type" required><option value="">Select</option><option>1 BHK</option><option>2 BHK</option><option>3 BHK</option><option>4 BHK</option><option>Villa</option><option>Kitchen only</option></select></div>
+        </div>
+        <div class="field"><label for="fBudget">Budget for your home interiors</label>
+          <select id="fBudget" name="Budget" required><option value="">Select budget</option><option>Under 4 Lakhs</option><option>4 – 6 Lakhs</option><option>6 – 8 Lakhs</option><option>8 – 10 Lakhs</option><option>10+ Lakhs</option></select>
+        </div>
+        <p class="ferr" id="fErr" role="alert"></p>
+        <button class="btn" type="submit" id="fBtn">Submit</button>
+        <p class="legal">We only use your details to contact you about your home. No spam.</p>
+      </form>
+      <div class="ok" role="status"><b>Thank you!</b>Our design expert will call you within 24 hours.</div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section>
+  <div class="wrap">
+    <span class="kicker reveal">Why Pinewood</span><h2 class="reveal">Why We're <em>Different</em></h2>
+    <p class="sub reveal">50+ families have trusted us to turn their houses into homes.</p>
+    <div class="stats reveal">
+      <div class="stat"><b data-count="50" data-suffix="+">0</b><span>Happy Homes</span></div>
+      <div class="stat"><b data-count="45">0</b><span>Days Delivery</span></div>
+      <div class="stat"><b data-count="140">0</b><span>Quality Checks</span></div>
+      <div class="stat"><b data-count="10">0</b><span>Years Warranty</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOMES -->
+<section class="alt" id="homes">
+  <div class="wrap">
+    <span class="kicker reveal">Pricing</span><h2 class="reveal">Homes for Every <em>Lifestyle</em></h2>
+    <p class="sub reveal">Transparent pricing for every home size.</p>
+    <div class="grid4">
+      <div class="card reveal"><div class="img"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=700&q=70" alt="4 BHK home"></div><div class="body"><h3>4 BHK</h3><p class="price"><b>₹8 Lakhs</b> onwards*</p></div></div>
+      <div class="card reveal"><div class="img"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=700&q=70" alt="3 BHK home"></div><div class="body"><h3>3 BHK</h3><p class="price"><b>₹6 Lakhs</b> onwards*</p></div></div>
+      <div class="card reveal"><div class="img"><img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=700&q=70" alt="2 BHK home"></div><div class="body"><h3>2 BHK</h3><p class="price"><b>₹4 Lakhs</b> onwards*</p></div></div>
+      <div class="card reveal"><div class="img"><img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=700&q=70" alt="Modular kitchen"></div><div class="body"><h3>Modular Kitchen</h3><p class="price"><b>₹2 Lakhs</b> onwards*</p></div></div>
+    </div>
+    <div class="center"><a href="#quote" class="btn">Get a Quote</a></div>
+  </div>
+</section>
+
+<!-- DESIGNS -->
+<section id="designs">
+  <div class="wrap">
+    <span class="kicker reveal">Styles</span><h2 class="reveal">Designs for Every <em>Preference</em></h2>
+    <p class="sub reveal">Pick a style you love. We'll make it yours.</p>
+    <div class="c3d reveal" id="c3d">
+      <div class="c3d-track">
+        <div class="c3d-card"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=70" alt="Modern Contemporary interior"><div class="cap"><small>Style 01</small><h3>Modern Contemporary</h3><p>Clean lines, open layouts, warm neutrals.</p></div></div>
+        <div class="c3d-card"><img src="https://images.unsplash.com/photo-1615873968403-89e068629265?w=800&q=70" alt="Modern Aesthetic interior"><div class="cap"><small>Style 02</small><h3>Modern Aesthetic</h3><p>Bold accent walls and curated art.</p></div></div>
+        <div class="c3d-card"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=70" alt="Wooden Traditional interior"><div class="cap"><small>Style 03</small><h3>Wooden Traditional</h3><p>Rich timber, classic craft, timeless comfort.</p></div></div>
+        <div class="c3d-card"><img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800&q=70" alt="Art Deco interior"><div class="cap"><small>Style 04</small><h3>Art Deco</h3><p>Brass, velvet and geometric glamour.</p></div></div>
+        <div class="c3d-card"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=70" alt="Minimal Scandinavian interior"><div class="cap"><small>Style 05</small><h3>Minimal Scandinavian</h3><p>Light woods, soft textures, calm spaces.</p></div></div>
+        <div class="c3d-card"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=70" alt="Earthy Organic interior"><div class="cap"><small>Style 06</small><h3>Earthy Organic</h3><p>Natural materials and greenery throughout.</p></div></div>
+        <div class="c3d-card"><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=70" alt="Mid-Century Modern interior"><div class="cap"><small>Style 07</small><h3>Mid-Century Modern</h3><p>Iconic forms with a warm, retro soul.</p></div></div>
+      </div>
+    </div>
+    <div class="c3d-nav"><button class="arr" id="c3dPrev" aria-label="Previous">&#8592;</button><div class="c3d-dots" id="c3dDots"></div><button class="arr" id="c3dNext" aria-label="Next">&#8594;</button></div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section class="alt" id="packages">
+  <div class="wrap">
+    <span class="kicker reveal">Packages</span><h2 class="reveal">Our Interior <em>Solutions</em></h2>
+    <p class="sub reveal">Four packages, one promise: quality you can see.</p>
+    <div class="tiers">
+      <div class="tier reveal"><span class="no">PACKAGE 01</span><h3>Basic</h3><p class="lvl">Smart essentials, done right</p><dl><div><dt>Plywood</dt><dd><span>ISI marked plywood</span></dd></div><div><dt>Hardware</dt><dd><span>Normal close hardware</span></dd></div><div><dt>Finish</dt><dd><span>Basic finish</span></dd></div></dl><a href="#quote" class="btn ghost">Get a Quote</a></div>
+      <div class="tier reveal"><span class="no">PACKAGE 02</span><h3>Premium</h3><p class="lvl">Everyday comfort, finer details</p><dl><div><dt>Plywood</dt><dd><span>ISI marked plywood</span></dd></div><div><dt>Hardware</dt><dd><span>Soft-close hardware</span><span class="up">Upgrade</span></dd></div><div><dt>Finish</dt><dd><span>Premium finish</span><span class="up">Upgrade</span></dd></div></dl><a href="#quote" class="btn ghost">Get a Quote</a></div>
+      <div class="tier top reveal"><span class="rec">Recommended</span><span class="no">PACKAGE 03</span><h3>Premium+</h3><p class="lvl">Branded materials throughout</p><dl><div><dt>Plywood</dt><dd><span>Century / Greenply plywood</span><span class="up">Upgrade</span></dd></div><div><dt>Hardware</dt><dd><span>Soft-close hardware</span></dd></div><div><dt>Finish</dt><dd><span>Premium finish</span></dd></div></dl><a href="#quote" class="btn">Get a Quote</a></div>
+      <div class="tier reveal"><span class="no">PACKAGE 04</span><h3>Luxé</h3><p class="lvl">Our finest, for statement homes</p><dl><div><dt>Plywood</dt><dd><span>Century / Greenply plywood</span></dd></div><div><dt>Hardware</dt><dd><span>Premium hardware</span><span class="up">Upgrade</span></dd></div><div><dt>Finish</dt><dd><span>Luxury finish</span><span class="up">Upgrade</span></dd></div></dl><a href="#quote" class="btn ghost">Get a Quote</a></div>
+    </div>
+    <p class="tiers-note reveal">Each package includes everything in the one before it. <b>Upgrade</b> marks what changes.</p>
+  </div>
+</section>
+
+<!-- OFFERINGS -->
+<section>
+  <div class="wrap">
+    <span class="kicker reveal">Our promise</span><h2 class="reveal">What We <em>Offer</em></h2>
+    <p class="sub reveal">Peace of mind, built in.</p>
+    <div class="offer">
+      <div class="ocard reveal"><div class="bgi"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=700&q=70" alt=""></div><span class="num">01</span><div class="grow"></div><h3>Material &amp; Quality Assurance</h3><p class="lead">Certified, verified materials with full transparency on every module.</p>
+        <ol class="olist"><li><b>Boiling Waterproof Plywood</b><span>(Greenply / Century) – 100% water-resistant</span></li><li><b>Moisture Resistant MDF</b><span>Best for wardrobes &amp; partitions</span></li><li><b>HDHMR Shutters</b><span>Soft-close (Action Tesa / Century)</span></li><li><b>Premium Hardware</b><span>Hettich, Blum &amp; Ebco only</span></li><li><b>Verified Materials</b><span>Bills &amp; tags provided</span></li><li><b>Factory Visits Welcome</b><span>Full transparency guaranteed</span></li></ol>
+        <button class="more">Read more <i>→</i></button></div>
+      <div class="ocard reveal"><div class="bgi"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&q=70" alt=""></div><span class="num">02</span><div class="grow"></div><h3>Budget Assurance</h3><p class="lead">Detailed, fixed quotes with no surprises from design to handover.</p>
+        <ol class="olist"><li><b>Detailed Quotes</b><span>All sizes, materials &amp; brands listed</span></li><li><b>Version History</b><span>Compare quote revisions easily</span></li><li><b>Design-Based Pricing</b><span>95% accurate, based on final 3D design</span></li><li><b>No Hidden Costs</b><span>Clear, fixed pricing before execution</span></li><li><b>Fits Your Budget</b><span>Custom material &amp; design options</span></li><li><b>Live Cost Tracking</b><span>Transparent updates during execution</span></li></ol>
+        <button class="more">Read more <i>→</i></button></div>
+      <div class="ocard reveal"><div class="bgi"><img src="https://images.unsplash.com/photo-1615873968403-89e068629265?w=700&q=70" alt=""></div><span class="num">03</span><div class="grow"></div><h3>10 Years Warranty</h3><p class="lead">Long-term cover on your woodwork, with support that continues after.</p>
+        <ol class="olist"><li><b>10-Year Warranty</b><span>On all modular woodwork</span></li><li><b>1-Year Warranty</b><span>Painting, plumbing, electrical</span></li><li><b>Extended Support</b><span>Even after warranty ends</span></li></ol>
+        <button class="more">Read more <i>→</i></button></div>
+      <div class="ocard reveal"><div class="bgi"><img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=700&q=70" alt=""></div><span class="num">04</span><div class="grow"></div><h3>Smart Interior Technology</h3><p class="lead">Engineered materials and hardware built for everyday Indian homes.</p>
+        <ol class="olist"><li><b>SoftGlide Hardware</b><span>Smooth, silent soft-close operation</span></li><li><b>BWP Core Protection</b><span>Waterproof plywood with anti-borer treatment</span></li><li><b>ThermoShield Coating</b><span>Heat-resistant surfaces</span></li><li><b>AquaBloc Edging</b><span>Waterproof protected edges</span></li><li><b>NanoGuard Laminate</b><span>Anti-fingerprint, stain-resistant</span></li><li><b>DuraBuild Structure</b><span>High-strength cabinet structures</span></li><li><b>ErgoCore Layout</b><span>Optimized ergonomic furniture design</span></li></ol>
+        <button class="more">Read more <i>→</i></button></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY TABS -->
+<section class="alt">
+  <div class="wrap">
+    <span class="kicker reveal">Inspiration</span><h2 class="reveal">Unlock 25% <em>Extra Space</em></h2>
+    <p class="sub reveal">Clever storage ideas for every corner of your home.</p>
+    <div class="tabs-wrap">    <div class="tabs" role="tablist"><span class="pill"></span>
+      <button class="on" data-tab="0">Smart Storage</button><button data-tab="1">Modular Kitchens</button><button data-tab="2">Bedrooms</button><button data-tab="3">Living Spaces</button>
+    </div></div>
+    <div class="gallery" id="gallery"></div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="wrap st-head reveal">
+    <div><span class="kicker" style="text-align:left">How it works</span><h2>Home Interiors in 5 <em>Simple Steps</em></h2></div>
+    <div><p>From the first call to the final handover, we take care of everything.</p></div>
+  </div>
+  <div class="wrap" id="stWrap">
+    <div class="st-track" id="stTrack">
+      <svg class="st-svg" id="stSvg"></svg>
+      <div class="st-card"><div class="n">01</div><h3>Get in Touch</h3><p>Call us or drop your details in the quick form. Our team calls you back to understand your home, needs and budget.</p></div>
+      <div class="st-card"><div class="n">02</div><h3>Custom Design Plan</h3><p>We create personalised 3D designs tailored to your space, style and budget.</p></div>
+      <div class="st-card"><div class="n">03</div><h3>Material Selection</h3><p>Choose from premium materials, finishes and colour palettes for your interiors.</p></div>
+      <div class="st-card"><div class="n">04</div><h3>Installation Day</h3><p>Our skilled craftsmen build and install everything with precision and care.</p></div>
+      <div class="st-card"><div class="n">05</div><h3>Handover</h3><p>A final walkthrough and quality check together. Then we hand over the keys to your ready-to-live home.</p></div>
+    </div>
+    <div class="st-prog"><span></span><i></i></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="rv-head reveal">
+      <div><span class="kicker" style="text-align:left">Happy homes</span><h2>What Our Customers <em>Say</em></h2></div>
+      <div class="rv-score"><b>4.8</b><div><div class="stars">★★★★★</div><small>Average customer rating</small></div></div>
+    </div>
+    <div class="rv reveal" id="rv">
+      <div class="rv-q">
+        <div class="mark">&ldquo;</div>
+        <div class="stars" id="rvStars">★★★★★</div>
+        <p class="rv-text" id="rvText"></p>
+        <div class="rv-who" id="rvWho"><div class="rv-av" id="rvAv"></div><div><b id="rvName"></b><span id="rvLoc"></span></div></div>
+        <div class="rv-nav" id="rvNav"></div>
+      </div>
+      <div class="rv-pic">
+        <div class="rv-frame" id="rvFrame"></div>
+        <span class="rv-count" id="rvCount">01 / 05</span>
+        <div class="rv-tag" id="rvTag"><small>Project</small><b id="rvProj"></b><span id="rvDays"></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MATERIALS -->
+<section class="mat">
+  <div class="wrap mat-head reveal">
+    <div><small>Built to last</small><h2>Materials We <em>Trust</em></h2></div>
+    <p>Certified, branded materials and hardware in every module, chosen for Indian homes and climates.</p>
+  </div>
+  <div class="mflow"><div class="mflow-row"><div class="mcard"><img src="https://images.unsplash.com/photo-1558997519-83ea9252edf8?w=500&q=70&auto=format" alt=""><span class="no">01</span><b>BWP Plywood</b><span>Boiling waterproof core</span></div><div class="mcard"><img src="https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?w=500&q=70&auto=format" alt=""><span class="no">02</span><b>HDHMR Boards</b><span>High-density, moisture-proof</span></div><div class="mcard"><img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=500&q=70&auto=format" alt=""><span class="no">03</span><b>Soft-Close Hinges</b><span>Silent, cushioned closing</span></div><div class="mcard"><img src="https://images.unsplash.com/photo-1556020685-ae41abfc9365?w=500&q=70&auto=format" alt=""><span class="no">04</span><b>Tandem Drawers</b><span>Full-extension, heavy load</span></div><div class="mcard"><img src="https://images.unsplash.com/photo-1541123437800-1bb1317badc2?w=500&q=70&auto=format" alt=""><span class="no">05</span><b>Quartz Countertops</b><span>Stain and scratch resistant</span></div><div class="mcard"><img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=500&q=70&auto=format" alt=""><span class="no">06</span><b>Low-VOC Paints</b><span>Healthier air at home</span></div><div class="mcard"><img src="https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?w=500&q=70&auto=format" alt=""><span class="no">07</span><b>2mm Edge Banding</b><span>Sealed, chip-free edges</span></div><div class="mcard"><img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=500&q=70&auto=format" alt=""><span class="no">08</span><b>Auto-Clean Chimneys</b><span>Filterless, easy upkeep</span></div><div class="mcard"><img src="https://images.unsplash.com/photo-1588854337236-6889d631faa8?w=500&q=70&auto=format" alt=""><span class="no">09</span><b>Acrylic &amp; PU Finishes</b><span>High-gloss, long-lasting</span></div><div class="mcard"><img src="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?w=500&q=70&auto=format" alt=""><span class="no">10</span><b>Toughened Glass</b><span>Safety-grade shutters</span></div><div class="mcard"><img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=500&q=70&auto=format" alt=""><span class="no">11</span><b>Profile LED Lighting</b><span>Warm and energy-efficient</span></div><div class="mcard"><img src="https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?w=500&q=70&auto=format" alt=""><span class="no">12</span><b>Anti-Termite Treatment</b><span>Protected for years</span></div><div class="mcard" aria-hidden="true"><img src="https://images.unsplash.com/photo-1558997519-83ea9252edf8?w=500&q=70&auto=format" alt=""><span class="no">01</span><b>BWP Plywood</b><span>Boiling waterproof core</span></div><div class="mcard" aria-hidden="true"><img src="https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?w=500&q=70&auto=format" alt=""><span class="no">02</span><b>HDHMR Boards</b><span>High-density, moisture-proof</span></div><div class="mcard" aria-hidden="true"><img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=500&q=70&auto=format" alt=""><span class="no">03</span><b>Soft-Close Hinges</b><span>Silent, cushioned closing</span></div><div class="mcard" aria-hidden="true"><img src="https://images.unsplash.com/photo-1556020685-ae41abfc9365?w=500&q=70&auto=format" alt=""><span class="no">04</span><b>Tandem Drawers</b><span>Full-extension, heavy load</span></div><div class="mcard" aria-hidden="true"><img src="https://images.unsplash.com/photo-1541123437800-1bb1317badc2?w=500&q=70&auto=format" alt=""><span class="no">05</span><b>Quartz Countertops</b><span>Stain and scratch resistant</span></div><div class="mcard" aria-hidden="true"><img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=500&q=70&auto=format" alt=""><span class="no">06</span><b>Low-VOC Paints</b><span>Healthier air at home</span></div><div class="mcard" aria-hidden="true"><img src="https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?w=500&q=70&auto=format" alt=""><span class="no">07</span><b>2mm Edge Banding</b><span>Sealed, chip-free edges</span></div><div class="mcard" aria-hidden="true"><img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=500&q=70&auto=format" alt=""><span class="no">08</span><b>Auto-Clean Chimneys</b><span>Filterless, easy upkeep</span></div><div class="mcard" aria-hidden="true"><img src="https://images.unsplash.com/photo-1588854337236-6889d631faa8?w=500&q=70&auto=format" alt=""><span class="no">09</span><b>Acrylic &amp; PU Finishes</b><span>High-gloss, long-lasting</span></div><div class="mcard" aria-hidden="true"><img src="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?w=500&q=70&auto=format" alt=""><span class="no">10</span><b>Toughened Glass</b><span>Safety-grade shutters</span></div><div class="mcard" aria-hidden="true"><img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=500&q=70&auto=format" alt=""><span class="no">11</span><b>Profile LED Lighting</b><span>Warm and energy-efficient</span></div><div class="mcard" aria-hidden="true"><img src="https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?w=500&q=70&auto=format" alt=""><span class="no">12</span><b>Anti-Termite Treatment</b><span>Protected for years</span></div></div></div>
+
+  <div class="wrap brands reveal"><div class="brands-head"><span>Brands we work with</span></div></div>
+  <div class="bq" aria-label="Brands we work with"><div class="bq-row"><div class="bq-set"><div class="blogo"><img src="brands/centuryply.png" alt="Centuryply"><span>Plywood</span></div><div class="blogo"><img src="brands/greenply.svg" alt="Greenply"><span>Plywood</span></div><div class="blogo"><img src="brands/asianpaints.svg" alt="Asian Paints"><span>Paints</span></div><div class="blogo"><img src="brands/ebco.png" alt="Ebco"><span>Hardware</span></div><div class="blogo"><img src="brands/hettich.svg" alt="Hettich"><span>Hardware</span></div><div class="blogo"><img src="brands/hafele.svg" alt="Häfele"><span>Hardware</span></div><div class="blogo"><img src="brands/blum.svg" alt="Blum"><span>Hardware</span></div><div class="blogo"><img src="brands/centuryply.png" alt=""><span>Plywood</span></div><div class="blogo"><img src="brands/greenply.svg" alt=""><span>Plywood</span></div><div class="blogo"><img src="brands/asianpaints.svg" alt=""><span>Paints</span></div><div class="blogo"><img src="brands/ebco.png" alt=""><span>Hardware</span></div><div class="blogo"><img src="brands/hettich.svg" alt=""><span>Hardware</span></div><div class="blogo"><img src="brands/hafele.svg" alt=""><span>Hardware</span></div><div class="blogo"><img src="brands/blum.svg" alt=""><span>Hardware</span></div></div><div class="bq-set" aria-hidden="true"><div class="blogo"><img src="brands/centuryply.png" alt=""><span>Plywood</span></div><div class="blogo"><img src="brands/greenply.svg" alt=""><span>Plywood</span></div><div class="blogo"><img src="brands/asianpaints.svg" alt=""><span>Paints</span></div><div class="blogo"><img src="brands/ebco.png" alt=""><span>Hardware</span></div><div class="blogo"><img src="brands/hettich.svg" alt=""><span>Hardware</span></div><div class="blogo"><img src="brands/hafele.svg" alt=""><span>Hardware</span></div><div class="blogo"><img src="brands/blum.svg" alt=""><span>Hardware</span></div><div class="blogo"><img src="brands/centuryply.png" alt=""><span>Plywood</span></div><div class="blogo"><img src="brands/greenply.svg" alt=""><span>Plywood</span></div><div class="blogo"><img src="brands/asianpaints.svg" alt=""><span>Paints</span></div><div class="blogo"><img src="brands/ebco.png" alt=""><span>Hardware</span></div><div class="blogo"><img src="brands/hettich.svg" alt=""><span>Hardware</span></div><div class="blogo"><img src="brands/hafele.svg" alt=""><span>Hardware</span></div><div class="blogo"><img src="brands/blum.svg" alt=""><span>Hardware</span></div></div></div></div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="alt">
+  <div class="wrap">
+    <span class="kicker reveal">FAQ</span><h2 class="reveal">Questions, <em>Answered</em></h2>
+    <p class="sub reveal">Everything you need to know before you start.</p>
+    <div class="faq">
+      <details><summary>How much does interior design cost for a 2, 3 or 4 BHK in Bangalore?</summary><p>A 2 BHK typically starts around ₹4 lakhs, a 3 BHK around ₹6 lakhs and a 4 BHK around ₹8 lakhs, depending on the package and scope.</p></details>
+      <details><summary>How much does a modular kitchen cost?</summary><p>Modular kitchens start from around ₹2 lakhs. Price depends on layout, size, materials and appliances.</p></details>
+      <details><summary>Can you design for a small kitchen?</summary><p>Yes. We use tall units, corner carousels and wall storage to get the most out of compact kitchens.</p></details>
+      <details><summary>How long does it take to complete the interiors?</summary><p>Most projects are delivered within 45 days of design sign-off.</p></details>
+      <details><summary>What services do you offer?</summary><p>Full home interiors, modular kitchens, wardrobes, false ceilings, lighting, painting, and decor.</p></details>
+      <details><summary>How can I get a quote for my home interiors?</summary><p>Book a consultation with our designers. After understanding your space and needs, we share a detailed, itemised quote based on your final 3D design.</p></details>
+      <details><summary>What common mistakes should I avoid?</summary><p>Skipping storage planning, choosing finishes without samples, and ignoring lighting are the most common ones. Your designer will guide you.</p></details>
+    </div>
+  </div>
+</section>
+
+<div class="cta-wrap"><div class="wrap"><div class="cta reveal"><span class="kicker">Let's begin</span><h2>Ready to Design Your <em>Dream Home?</em></h2><p>Talk to our design experts and get a detailed quote for your home.</p><a href="#quote" class="btn">Get a Quote</a></div></div></div>
+
+<dialog class="omodal" id="omodal"><div class="mhead"><img alt=""><button class="x" aria-label="Close">×</button><h3><small></small><span></span></h3></div><div class="mbody"><ol></ol></div></dialog>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div><div class="logo"><img src="logo.png" alt="Pinewood logo"><span class="lt"><b>Pinewood</b><small>Interiors &amp; Spaces</small></span></div><p style="font-size:14px;max-width:300px">Earthy, natural interiors and thoughtfully crafted spaces for modern Indian homes.</p></div>
+      <div><h4>Services</h4><ul><li><a href="#homes">Full Home Interiors</a></li><li><a href="#homes">Modular Kitchens</a></li><li><a href="#designs">Design Styles</a></li><li><a href="#packages">Packages</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="#process">How It Works</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#faq">FAQ</a></li><li><a href="#quote">Get a Quote</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li>Bangalore, Karnataka</li><li><a href="tel:+918197833092">+91 81978 33092</a></li><li><a href="mailto:pinewoodinteriorsandspaces@gmail.com">pinewoodinteriorsandspaces@gmail.com</a></li><li>Mon – Sat, 10am – 7pm</li></ul></div>
+    </div>
+    <div class="copy">© 2026 Pinewood Interiors & Spaces. All rights reserved.</div>
+  </div>
+</footer>
+
+<a href="#quote" class="btn float hide" id="floatBtn">Get a Free Quote</a>
+
+<script>
+// hero slideshow
+const slides=[...document.querySelectorAll('.slides img')],hdots=document.getElementById('heroDots'),hcap=document.getElementById('heroCap');let si=0,ht;
+slides.forEach((_,i)=>{const b=document.createElement('button');b.setAttribute('aria-label','Slide '+(i+1));b.onclick=()=>hgo(i);hdots.appendChild(b)});
+function hgo(i){slides[si].classList.remove('on');si=(i+slides.length)%slides.length;const im=slides[si];im.classList.remove('on');void im.offsetWidth;im.classList.add('on');
+  [...hdots.children].forEach((d,k)=>{d.classList.remove('on');if(k===si){void d.offsetWidth;d.classList.add('on')}});
+  hcap.style.opacity=0;setTimeout(()=>{hcap.textContent=im.dataset.cap;hcap.style.opacity=1},300);clearInterval(ht);ht=setInterval(()=>hgo(si+1),6000)}
+hdots.children[0].classList.add('on');ht=setInterval(()=>hgo(si+1),6000);
+
+// lead form
+// ===== QUOTE EMAIL: submissions go to pinewoodinteriorsandspaces@gmail.com via FormSubmit.
+// The value below is FormSubmit's private alias for that inbox (keeps the address hidden from spam bots).
+const QUOTE_EMAIL='1c9322d9d599e22b30864c0d75250aa1';
+(()=>{const f=document.getElementById('leadForm'),err=document.getElementById('fErr'),btn=document.getElementById('fBtn');
+const msgs={Name:'Please enter your name.',Mobile:'Please enter a valid 10-digit mobile number.',Pincode:'Please enter a valid Bangalore pincode (56xxxx).','Home type':'Please select your home type.',Budget:'Please select a budget.'};
+f.querySelectorAll('input,select').forEach(el=>el.addEventListener('input',()=>{el.classList.remove('bad');err.textContent=''}));
+f.addEventListener('submit',async e=>{e.preventDefault();err.textContent='';
+  for(const el of f.querySelectorAll('[required]')){el.value=el.value.trim();if(!el.checkValidity()){el.classList.add('bad');el.focus();err.textContent=msgs[el.name]||'Please check this field.';return}}
+  if(f._honey.value)return;
+  if(!QUOTE_EMAIL||QUOTE_EMAIL.includes('YOUR-EMAIL')){err.textContent='The quote form is not connected to an email address yet.';return}
+  const data=Object.fromEntries(new FormData(f));delete data._honey;
+  data._subject='New quote request: '+data.Name+' ('+data['Home type']+', '+data.Budget+')';data._template='table';data._captcha='false';
+  btn.disabled=true;btn.textContent='Sending…';
+  const done=()=>{f.style.display='none';document.querySelector('.ok').style.display='block'};
+  // FormSubmit can take 20-30s to reply. The request keeps running in the background (keepalive),
+  // so after a short wait we thank the visitor instead of leaving them on "Sending…".
+  let shown=false;const early=setTimeout(()=>{shown=true;done()},6000);
+  try{const r=await fetch('https://formsubmit.co/ajax/'+encodeURIComponent(QUOTE_EMAIL),{method:'POST',keepalive:true,headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)});
+    const j=await r.json().catch(()=>({}));
+    if(!r.ok||j.success==='false'||j.success===false)throw new Error(j.message||'send failed');
+    clearTimeout(early);if(!shown)done()}
+  catch(x){clearTimeout(early);if(shown)return;err.textContent='Sorry, something went wrong. Please try again or call us.';btn.disabled=false;btn.textContent='Submit'}})})();
+
+// mobile menu
+(()=>{const h=document.querySelector('header'),b=h.querySelector('.menu-btn');
+b.onclick=()=>{const o=h.classList.toggle('nav-open');b.setAttribute('aria-expanded',o)};
+h.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>{h.classList.remove('nav-open');b.setAttribute('aria-expanded',false)}))})();
+
+// floating quote button: hidden while the hero form is visible
+(()=>{const fb=document.getElementById('floatBtn');new IntersectionObserver(es=>fb.classList.toggle('hide',es[0].isIntersecting),{threshold:.1}).observe(document.querySelector('.form-card'))})();
+
+// reveal + counters
+const io=new IntersectionObserver(es=>es.forEach(en=>{if(!en.isIntersecting)return;en.target.classList.add('in');
+  en.target.querySelectorAll('[data-count]').forEach(el=>{const t=+el.dataset.count;let s=null;const step=ts=>{s=s||ts;const p=Math.min((ts-s)/1400,1);el.textContent=Math.floor(p*t)+(p===1?(el.dataset.suffix||(t>=100?'+':'')):'');if(p<1)requestAnimationFrame(step)};requestAnimationFrame(step)});
+  io.unobserve(en.target)}),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// offerings read more (modal)
+(()=>{const m=document.getElementById('omodal'),ol=m.querySelector('ol');
+document.querySelectorAll('.ocard .more').forEach(b=>b.onclick=()=>{const c=b.closest('.ocard');
+  m.querySelector('.mhead img').src=c.querySelector('.bgi img').src;
+  m.querySelector('.mhead small').textContent=c.querySelector('.num').textContent+' · Our Offerings';
+  m.querySelector('.mhead span').textContent=c.querySelector('h3').textContent;
+  ol.innerHTML=c.querySelector('.olist').innerHTML;
+  [...ol.children].forEach((li,i)=>li.style.animationDelay=(.15+i*.07)+'s');
+  m.showModal();document.body.style.overflow='hidden'});
+const close=()=>{m.close()};m.querySelector('.x').onclick=close;
+m.addEventListener('click',e=>{if(e.target===m)close()});
+m.addEventListener('close',()=>document.body.style.overflow='')})();
+
+// reviews spotlight
+(()=>{const R=[
+ {n:'Priya & Arjun',l:'Whitefield',p:'3 BHK Full Home',d:'Delivered in 28 days',img:'photo-1615529182904-14819c35db37',q:'The team delivered our 3 BHK on time, and the finish quality is excellent. Every corner feels thought through, and the wood tones are exactly what we dreamed of.'},
+ {n:'Rahul M.',l:'HSR Layout',p:'Modular Kitchen',d:'Delivered in 21 days',img:'photo-1600489000022-c2086d79f9d4',q:'Our kitchen finally has space for everything. Seeing it in 3D before anything was built made all our decisions so much easier.'},
+ {n:'Sneha K.',l:'Sarjapur Road',p:'2 BHK Full Home',d:'Delivered in 26 days',img:'photo-1583847268964-b28dc8f51f92',q:'Transparent pricing and absolutely no surprises. The quote we signed was the bill we paid. I would recommend Pinewood to anyone.'},
+ {n:'Vikram R.',l:'Electronic City',p:'Bedroom & Wardrobes',d:'Delivered in 18 days',img:'photo-1617104678098-de229db51175',q:'We loved the wardrobe designs. Installation was quick and clean, and the soft-close fittings still feel brand new.'},
+ {n:'Ananya S.',l:'Hebbal',p:'4 BHK Villa',d:'Delivered in 30 days',img:'photo-1600607687939-ce8a6c25118c',q:'From the first call to the final handover, the whole process was smooth. Our villa feels warm, calm and completely ours.'}];
+const root=document.getElementById('rv'),nav=document.getElementById('rvNav'),frame=document.getElementById('rvFrame'),text=document.getElementById('rvText'),who=document.getElementById('rvWho'),tag=document.getElementById('rvTag');
+const ini=n=>n.split(/[ &]+/).filter(Boolean).map(w=>w[0]).join('').slice(0,2).toUpperCase();
+const imgs=R.map(r=>{const im=document.createElement('img');im.src=`https://images.unsplash.com/${r.img}?w=1100&q=78&auto=format`;im.alt=r.p+' by Pinewood';frame.appendChild(im);return im});
+R.forEach((r,i)=>{const b=document.createElement('button');b.innerHTML=`<i>${ini(r.n)}</i>${r.n.split(' ')[0]}`;b.onclick=()=>go(i,true);nav.appendChild(b)});
+let cur=-1,t,started=false;const DUR=7000;
+function go(i,user){i=(i+R.length)%R.length;if(i===cur)return;const r=R[i];
+  imgs.forEach(im=>im.classList.remove('prev'));if(cur>=0){imgs[cur].classList.remove('on');imgs[cur].classList.add('prev')}
+  void imgs[i].offsetWidth;imgs[i].classList.add('on');cur=i;
+  text.innerHTML=r.q.split(' ').map((w,k)=>`<span class="w" style="animation-delay:${(k*0.035).toFixed(3)}s">${w}</span>`).join(' ');
+  who.classList.remove('on');tag.classList.add('out');
+  setTimeout(()=>{document.getElementById('rvAv').textContent=ini(r.n);document.getElementById('rvName').textContent=r.n;document.getElementById('rvLoc').textContent=r.l;
+    document.getElementById('rvProj').textContent=r.p;document.getElementById('rvDays').textContent=r.d;who.classList.add('on');tag.classList.remove('out')},350);
+  document.getElementById('rvCount').textContent=String(i+1).padStart(2,'0')+' / '+String(R.length).padStart(2,'0');
+  [...nav.children].forEach((b,k)=>{b.classList.remove('on');if(k===i){void b.offsetWidth;b.classList.add('on')}});
+  clearTimeout(t);t=setTimeout(()=>go(cur+1),DUR)}
+root.style.setProperty('--dur',DUR/1000+'s');
+root.addEventListener('mouseenter',()=>{root.classList.add('paused');clearTimeout(t)});
+root.addEventListener('mouseleave',()=>{root.classList.remove('paused');clearTimeout(t);t=setTimeout(()=>go(cur+1),2500)});
+let sx=null;frame.parentElement.addEventListener('touchstart',e=>sx=e.touches[0].clientX,{passive:true});
+frame.parentElement.addEventListener('touchend',e=>{if(sx===null)return;const dx=e.changedTouches[0].clientX-sx;sx=null;if(Math.abs(dx)>40)go(cur+(dx<0?1:-1),true)});
+new IntersectionObserver((es,o)=>{if(es[0].isIntersecting&&!started){started=true;go(0);o.disconnect()}},{threshold:.25}).observe(root)})();
+
+// steps timeline
+(()=>{const tr=document.getElementById('stTrack'),wrap=document.getElementById('stWrap'),svg=document.getElementById('stSvg'),cards=[...tr.querySelectorAll('.st-card')],NS='http://www.w3.org/2000/svg';
+const R=c=>({left:c.offsetLeft,top:c.offsetTop,width:c.offsetWidth,right:c.offsetLeft+c.offsetWidth,bottom:c.offsetTop+c.offsetHeight});
+function draw(){svg.innerHTML='';const vertical=getComputedStyle(tr).gridTemplateColumns.split(' ').length===1;
+  for(let i=0;i<cards.length-1;i++){const a=R(cards[i]),b=R(cards[i+1]);let d;
+    if(vertical){const x1=a.left+a.width*.5,y1=a.bottom,x2=b.left+b.width*.5,y2=b.top,m=(y1+y2)/2;d=`M${x1},${y1} C${x1},${m} ${x2},${m} ${x2},${y2}`}
+    else if(i%2===0){const x1=a.left+a.width*.7,y1=a.bottom,x2=b.left,y2=b.bottom-40;d=`M${x1},${y1} C${x1},${y2-10} ${x2-30},${y2} ${x2},${y2}`}
+    else{const x1=a.left+a.width*.7,y1=a.top,x2=b.left,y2=b.top+40;d=`M${x1},${y1} C${x1},${y2+10} ${x2-30},${y2} ${x2},${y2}`}
+    const p=document.createElementNS(NS,'path');p.setAttribute('d',d);svg.appendChild(p);const L=p.getTotalLength();p.style.setProperty('--len',L);p.style.transitionDelay=(.4+i*.3)+'s';
+    const pt=p.getPointAtLength(L*(vertical?.5:.6));
+    [['halo',10],['',5]].forEach(([c,r])=>{const k=document.createElementNS(NS,'circle');k.setAttribute('cx',pt.x);k.setAttribute('cy',pt.y);k.setAttribute('r',r);if(c)k.setAttribute('class',c);k.style.transitionDelay=(.9+i*.3)+'s';svg.appendChild(k)})}}
+cards.forEach((c,i)=>c.style.transitionDelay=(i*.15)+'s');
+draw();
+new IntersectionObserver((es,o)=>{if(es[0].isIntersecting){tr.offsetWidth;tr.classList.add('st-on');wrap.classList.add('st-done');
+  setTimeout(()=>{cards.forEach(c=>c.style.transitionDelay='0s');svg.querySelectorAll('path,circle').forEach(e=>e.style.transitionDelay='0s')},2600);o.disconnect()}},{threshold:.2}).observe(tr);
+let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(draw,120)});
+document.fonts&&document.fonts.ready.then(draw)})();
+
+// marquees: same speed (px per second), opposite directions
+(()=>{const SPEED=40;const rows=[...document.querySelectorAll('.mflow-row,.bq-row')];
+const set=()=>rows.forEach(r=>{const dist=r.scrollWidth/2+(r.classList.contains('mflow-row')?9:0);r.style.animationDuration=(dist/SPEED).toFixed(2)+'s'});
+set();addEventListener('load',set);let t;addEventListener('resize',()=>{clearTimeout(t);t=setTimeout(set,150)})})();
+
+// 3d carousel
+(()=>{const root=document.getElementById('c3d'),cards=[...root.querySelectorAll('.c3d-card')],n=cards.length,dots=document.getElementById('c3dDots');let cur=0,timer;
+cards.forEach((_,i)=>{const b=document.createElement('button');b.setAttribute('aria-label','Style '+(i+1));b.onclick=()=>go(i);dots.appendChild(b)});
+function render(){const w=root.clientWidth,step=Math.min(w*0.24,260);
+  cards.forEach((c,i)=>{let o=i-cur;if(o>n/2)o-=n;if(o<-n/2)o+=n;const a=Math.abs(o);
+    c.style.transform=`translateX(${o*step}px) translateZ(${-a*170}px) rotateY(${o*-28}deg)`;
+    c.style.zIndex=100-a;c.style.opacity=a>2?0:1;c.style.filter=a?`brightness(${1-a*.18})`:'none';c.style.pointerEvents=a>2?'none':'auto';
+    c.classList.toggle('active',o===0)});
+  [...dots.children].forEach((d,i)=>d.classList.toggle('on',i===cur))}
+function go(i){cur=(i+n)%n;render();restart()}
+function restart(){clearInterval(timer);timer=setInterval(()=>go(cur+1),4000)}
+cards.forEach((c,i)=>c.onclick=()=>{if(i!==cur)go(i)});
+document.getElementById('c3dPrev').onclick=()=>go(cur-1);document.getElementById('c3dNext').onclick=()=>go(cur+1);
+let sx=null;root.addEventListener('pointerdown',e=>sx=e.clientX);
+root.addEventListener('pointerup',e=>{if(sx===null)return;const dx=e.clientX-sx;sx=null;if(Math.abs(dx)>40)go(cur+(dx<0?1:-1))});
+root.addEventListener('mouseenter',()=>clearInterval(timer));root.addEventListener('mouseleave',restart);
+addEventListener('resize',render);render();restart()})();
+
+// gallery tabs
+const U=id=>`https://images.unsplash.com/${id}?w=900&q=70`;
+const sets=[
+ ['photo-1615874694520-474822394e73','photo-1558997519-83ea9252edf8','photo-1594026112284-02bb6f3352fe','photo-1595428774223-ef52624120d2','photo-1556020685-ae41abfc9365'],
+ ['photo-1556909172-54557c7e4fb7','photo-1600489000022-c2086d79f9d4','photo-1565183928294-7063f23ce0f8','photo-1588854337236-6889d631faa8','photo-1556912167-f556f1f39fdf'],
+ ['photo-1617104678098-de229db51175','photo-1617325247661-675ab4b64ae2','photo-1505693416388-ac5ce068fe85','photo-1615874959474-d609969a20ed','photo-1616594039964-ae9021a400a0'],
+ ['photo-1615529182904-14819c35db37','photo-1583847268964-b28dc8f51f92','photo-1618221195710-dd6b41faaea6','photo-1586023492125-27b2c045efd7','photo-1600210492486-724fe5c67fb0']];
+const gal=document.getElementById('gallery'),tabsEl=document.querySelector('.tabs'),pill=tabsEl.querySelector('.pill');
+const labels=[['Smart Storage',['Built-in shelving','Full-height wardrobe','Floating wall units','Open cubby storage','Bedside console']],
+ ['Modular Kitchens',['L-shaped kitchen','U-shaped kitchen','Island kitchen','Handleless cabinets','Breakfast island']],
+ ['Bedrooms',['Master suite','Wooden platform bed','Classic bedroom','Boho bedroom','Statement bedroom']],
+ ['Living Spaces',['Earthy living','Cosy lounge','Contemporary living','Reading corner','Bright living area']]];
+const tiles=sets[0].map(()=>{const d=document.createElement('div');d.className='gtile';d.innerHTML='<img alt=""><div class="tag"><small></small><span></span></div>';gal.appendChild(d);return d});
+let curTab=-1,busy=false;
+const preload=src=>new Promise(r=>{const im=new Image();im.onload=im.onerror=r;im.src=src});
+const imgPos={'photo-1556909172-54557c7e4fb7':'62% 60%'};
+function fill(i){tiles.forEach((t,k)=>{t.querySelector('img').src=U(sets[i][k]);t.querySelector('img').style.objectPosition=imgPos[sets[i][k]]||'';t.querySelector('img').alt=labels[i][1][k];t.querySelector('small').textContent=labels[i][0];t.querySelector('.tag span').textContent=labels[i][1][k]})}
+function movePill(b){pill.style.width=b.offsetWidth+'px';pill.style.transform=`translateX(${b.offsetLeft}px)`}
+async function show(i){if(i===curTab||busy)return;busy=true;const first=curTab<0;curTab=i;
+  const srcs=sets[i].map(U),loading=Promise.all(srcs.map(preload));
+  if(!first){tiles.forEach((t,k)=>setTimeout(()=>t.classList.add('out'),k*70));await new Promise(r=>setTimeout(r,650))}
+  else tiles.forEach(t=>t.classList.add('out'));
+  await loading;fill(i);
+  tiles.forEach((t,k)=>setTimeout(()=>t.classList.remove('out'),60+k*110));
+  setTimeout(()=>busy=false,700)}
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{if(busy)return;document.querySelector('.tabs .on').classList.remove('on');b.classList.add('on');movePill(b);tabsEl.scrollTo({left:b.offsetLeft-(tabsEl.clientWidth-b.offsetWidth)/2,behavior:'smooth'});show(+b.dataset.tab)});
+const firstBtn=document.querySelector('.tabs .on');requestAnimationFrame(()=>movePill(firstBtn));
+addEventListener('resize',()=>movePill(document.querySelector('.tabs .on')));
+document.fonts&&document.fonts.ready.then(()=>movePill(document.querySelector('.tabs .on')));
+new IntersectionObserver((es,o)=>{if(es[0].isIntersecting){show(0);o.disconnect()}},{threshold:.2}).observe(gal);
+
+</script>
+</body>
+</html>
