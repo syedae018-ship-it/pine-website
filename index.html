@@ -39,7 +39,7 @@ section{padding:96px 0}
 .btn[disabled]{opacity:.6;cursor:wait;transform:none}
 
 /* header */
-header{position:sticky;top:0;z-index:50;background:rgba(243,239,232,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header{position:sticky;top:0;z-index:50;background:rgba(243,239,232,.94);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 header .wrap{display:flex;align-items:center;justify-content:space-between;height:70px}
 .logo{display:flex;align-items:center;gap:10px;font-family:Poppins,sans-serif}
 .logo img{width:auto;height:54px;object-fit:contain;background:none}
@@ -73,7 +73,7 @@ nav a:hover::after{transform:scaleX(1)}
 .slides img.on{opacity:1;animation:zoom 8s linear forwards}
 .slides img{filter:saturate(1.08) contrast(1.04)}
 .hero-ui{position:absolute;right:max(20px,calc((100vw - 1200px)/2 + 20px));bottom:28px;z-index:3;display:flex;align-items:center;gap:18px}
-.hero-cap{font:500 11px Poppins,sans-serif;letter-spacing:3px;text-transform:uppercase;color:#efe6d8;padding:8px 14px;border:1px solid rgba(239,230,216,.35);border-radius:999px;background:rgba(30,35,25,.35);backdrop-filter:blur(6px);transition:opacity .4s}
+.hero-cap{font:500 11px Poppins,sans-serif;letter-spacing:3px;text-transform:uppercase;color:#efe6d8;padding:8px 14px;border:1px solid rgba(239,230,216,.35);border-radius:999px;background:rgba(30,35,25,.35);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);transition:opacity .4s}
 .hero-dots{display:flex;gap:8px}
 .hero-dots button{width:26px;height:3px;border:0;padding:0;border-radius:3px;background:rgba(255,255,255,.35);cursor:pointer;position:relative;overflow:hidden}
 .hero-dots button.on::after{content:"";position:absolute;inset:0;background:#d9bf9c;transform-origin:left;animation:hbar 6s linear forwards}
@@ -134,7 +134,9 @@ html,body{overflow-x:clip}
 .c3d{position:relative;height:520px;perspective:1400px;user-select:none;touch-action:pan-y}
 .c3d-track{position:relative;width:100%;height:100%;transform-style:preserve-3d}
 .c3d-card{position:absolute;top:0;left:50%;width:340px;height:460px;margin-left:-170px;border-radius:22px;overflow:hidden;cursor:pointer;
-  transition:transform .8s cubic-bezier(.22,.8,.25,1),opacity .8s,filter .8s;box-shadow:0 30px 60px rgba(30,35,25,.28);background:var(--soft)}
+  transition:transform .8s cubic-bezier(.22,.8,.25,1),opacity .8s;box-shadow:0 30px 60px rgba(30,35,25,.28);background:var(--soft)}
+.c3d-card{-webkit-backface-visibility:hidden;backface-visibility:hidden;will-change:transform,opacity}
+.c3d-card .dim{position:absolute;inset:0;z-index:3;background:#1e2318;opacity:0;pointer-events:none;transition:opacity .8s}
 .c3d-card img{pointer-events:none}
 .c3d-card::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(25,30,20,.85))}
 .c3d-card .cap{position:absolute;left:24px;right:24px;bottom:22px;z-index:2;color:#fff;transition:opacity .5s,transform .5s}
@@ -196,7 +198,7 @@ html,body{overflow-x:clip}
 .more:hover{gap:16px;color:var(--wood)}
 /* offer modal */
 .omodal{margin:auto;border:0;padding:0;border-radius:24px;width:min(560px,calc(100% - 32px));max-height:calc(100vh - 60px);background:var(--card);color:var(--ink);box-shadow:0 40px 80px rgba(20,25,15,.35);overflow:hidden}
-.omodal::backdrop{background:rgba(30,35,25,.55);backdrop-filter:blur(4px)}
+.omodal::backdrop{background:rgba(30,35,25,.55);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
 .omodal[open]{animation:mIn .5s cubic-bezier(.22,.8,.25,1)}
 .omodal[open]::backdrop{animation:fIn .4s ease}
 @keyframes mIn{from{opacity:0;transform:translateY(30px) scale(.96)}}
@@ -224,8 +226,8 @@ html,body{overflow-x:clip}
 .tabs button.on{color:#fff}
 .gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:240px 240px;gap:14px}
 .gtile{position:relative;border-radius:var(--radius);overflow:hidden;background:var(--soft);
-  transition:opacity .55s ease,transform .7s cubic-bezier(.22,.8,.25,1),clip-path .8s cubic-bezier(.65,0,.35,1);clip-path:inset(0 0 0 0 round 16px)}
-.gtile.out{opacity:0;transform:translateY(18px) scale(.97);clip-path:inset(0 0 100% 0 round 16px)}
+  transition:opacity .55s ease,transform .7s cubic-bezier(.22,.8,.25,1),clip-path .8s cubic-bezier(.65,0,.35,1);clip-path:inset(0 0 0 0)}
+.gtile.out{opacity:0;transform:translateY(18px) scale(.97);clip-path:inset(0 0 100% 0)}
 .gtile img{transition:transform 1.2s cubic-bezier(.22,.8,.25,1)}
 .gtile:hover img{transform:scale(1.07)}
 .gtile::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(25,30,20,.65));opacity:0;transition:opacity .5s}
@@ -285,8 +287,8 @@ html,body{overflow-x:clip}
 .rv-q{position:relative;min-height:330px;display:flex;flex-direction:column}
 .rv-q .mark{font:600 140px/0.7 Poppins,sans-serif;color:var(--wood);opacity:.22;height:70px;margin-bottom:6px}
 .rv-text{font:300 clamp(21px,2.3vw,28px)/1.5 Poppins,sans-serif;color:var(--ink);letter-spacing:-.3px;min-height:170px}
-.rv-text .w{display:inline-block;opacity:0;transform:translateY(14px);filter:blur(4px);animation:wIn .6s cubic-bezier(.22,.8,.25,1) forwards}
-@keyframes wIn{to{opacity:1;transform:none;filter:none}}
+.rv-text .w{display:inline-block;opacity:0;transform:translate3d(0,14px,0);animation:wIn .6s cubic-bezier(.22,.8,.25,1) forwards}
+@keyframes wIn{to{opacity:1;transform:translate3d(0,0,0)}}
 .rv-who{display:flex;align-items:center;gap:14px;margin-top:22px;opacity:0;transform:translateY(10px);transition:.6s .2s}
 .rv-who.on{opacity:1;transform:none}
 .rv-av{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;background:var(--brand);color:#fff;font:500 16px Poppins,sans-serif}
@@ -312,7 +314,7 @@ html,body{overflow-x:clip}
 .rv-tag small{display:block;font:500 10px Poppins,sans-serif;letter-spacing:2.5px;text-transform:uppercase;color:var(--wood);margin-bottom:4px}
 .rv-tag b{font:500 17px Poppins,sans-serif;display:block}
 .rv-tag span{font-size:13px;color:var(--muted)}
-.rv-count{position:absolute;right:22px;top:20px;z-index:3;font:500 12px Poppins,sans-serif;letter-spacing:2px;color:#fff;background:rgba(30,35,25,.45);backdrop-filter:blur(6px);padding:7px 12px;border-radius:999px}
+.rv-count{position:absolute;right:22px;top:20px;z-index:3;font:500 12px Poppins,sans-serif;letter-spacing:2px;color:#fff;background:rgba(30,35,25,.45);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);padding:7px 12px;border-radius:999px}
 @media (max-width:900px){.rv-q .mark{font-size:100px;height:46px}.rv{grid-template-columns:1fr;gap:48px}.rv-pic{order:-1;aspect-ratio:4/3;margin:0 10px 0 18px}.rv-tag{left:-10px;bottom:-22px;min-width:0;padding:10px 14px;border-radius:14px}.rv-tag b{font-size:15px}.rv-q{min-height:0}.rv-text{min-height:0}
  .rv-head{flex-direction:column;align-items:flex-start}}
 
@@ -327,7 +329,7 @@ html,body{overflow-x:clip}
 .mflow{-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
 .mflow-row{display:flex;gap:18px;width:max-content;animation:mflow 70s linear infinite;padding:12px 0}
 .mflow:hover .mflow-row{animation-play-state:paused}
-@keyframes mflow{to{transform:translateX(calc(-50% - 9px))}}
+@keyframes mflow{from{transform:translate3d(0,0,0)}to{transform:translate3d(calc(-50% - 9px),0,0)}}
 .mcard{position:relative;flex:0 0 220px;height:280px;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:#fff;display:flex;flex-direction:column;justify-content:flex-end;padding:20px;transition:transform .5s cubic-bezier(.22,.8,.25,1),border-color .4s}
 .mcard img{position:absolute;inset:0;opacity:.88;transition:opacity .6s,transform 1.2s cubic-bezier(.22,.8,.25,1)}
 .mcard::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(251,249,245,0) 0%,rgba(251,249,245,.1) 42%,rgba(251,249,245,.9) 68%,#fbf9f5 84%)}
@@ -349,7 +351,7 @@ html,body{overflow-x:clip}
 .bq-row{display:flex;width:max-content;animation:bq 45s linear infinite reverse;padding:12px 0}
 .bq:hover .bq-row{animation-play-state:paused}
 .bq-set{display:flex;gap:18px;padding-right:18px}
-@keyframes bq{to{transform:translateX(-50%)}}
+@keyframes bq{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
 .blogo{flex:0 0 190px;height:120px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:16px;transition:border-color .4s,transform .4s}
 .blogo img{width:auto;height:46px;max-width:140px;object-fit:contain;background:none;filter:grayscale(1);opacity:.7;transition:filter .4s,opacity .4s}
 .blogo span{font:500 10px Poppins,sans-serif;letter-spacing:2px;text-transform:uppercase;color:#b0a593}
@@ -357,6 +359,12 @@ html,body{overflow-x:clip}
 .blogo:hover img{filter:none;opacity:1}
 @media (prefers-reduced-motion:reduce){.bq-row{animation:none}}
 @media (max-width:760px){.brands{margin-top:56px}.blogo{flex-basis:150px;height:100px}.blogo img{height:38px;max-width:112px}}
+/* Safari: keep rounded corners clipped while children animate */
+.card .img,.ocard .bgi,.gtile,.mcard,.omodal .mhead{-webkit-mask-image:-webkit-radial-gradient(white,black);isolation:isolate}
+.card,.ocard,.rv-frame{isolation:isolate;-webkit-transform:translateZ(0);transform:translateZ(0)}
+.card:hover{transform:translateY(-4px)}.ocard:hover{transform:translateY(-6px)}
+.mflow,.bq{-webkit-transform:translateZ(0);transform:translateZ(0)}
+.mflow-row,.bq-row,.slides img,.gtile img,.ocard .bgi img,.mcard img{will-change:transform}
 /* faq */
 .faq{max-width:820px;margin:0 auto}
 details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:12px;padding:0 24px;transition:border-color .3s}
@@ -393,6 +401,7 @@ footer .copy{border-top:1px solid #454c3e;margin-top:40px;padding-top:20px;font-
 
 @media (max-width:960px){
   .menu-btn{display:block}
+  .h-right .btn{display:none}
   nav{position:absolute;top:70px;left:0;right:0;flex-direction:column;gap:0;background:var(--card);border-bottom:1px solid var(--line);padding:6px 20px 14px;transform:translateY(-8px);opacity:0;pointer-events:none;transition:.3s;box-shadow:0 20px 30px rgba(40,45,30,.08)}
   nav a{padding:14px 0;border-bottom:1px solid var(--line)}nav a:last-child{border-bottom:0}nav a::after{display:none}
   .nav-open nav{transform:none;opacity:1;pointer-events:auto}
@@ -654,7 +663,7 @@ footer .copy{border-top:1px solid #454c3e;margin-top:40px;padding-top:20px;font-
       <div><div class="logo"><img src="logo.png" alt="Pinewood logo"><span class="lt"><b>Pinewood</b><small>Interiors &amp; Spaces</small></span></div><p style="font-size:14px;max-width:300px">Earthy, natural interiors and thoughtfully crafted spaces for modern Indian homes.</p></div>
       <div><h4>Services</h4><ul><li><a href="#homes">Full Home Interiors</a></li><li><a href="#homes">Modular Kitchens</a></li><li><a href="#designs">Design Styles</a></li><li><a href="#packages">Packages</a></li></ul></div>
       <div><h4>Company</h4><ul><li><a href="#process">How It Works</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#faq">FAQ</a></li><li><a href="#quote">Get a Quote</a></li></ul></div>
-      <div><h4>Contact</h4><ul><li>Bangalore, Karnataka</li><li><a href="tel:+918197833092">+91 81978 33092</a></li><li><a href="mailto:pinewoodinteriorsandspaces@gmail.com">pinewoodinteriorsandspaces@gmail.com</a></li><li>Mon – Sat, 10am – 7pm</li></ul></div>
+      <div><h4>Contact</h4><ul><li>Bangalore, Karnataka</li><li><a href="tel:+918197833092">+91 81978 33092</a></li><li><a href="tel:+918151833092">+91 81518 33092</a></li><li><a href="mailto:pinewoodinteriorsandspaces@gmail.com">pinewoodinteriorsandspaces@gmail.com</a></li><li>Mon – Sat, 10am – 7pm</li></ul></div>
     </div>
     <div class="copy">© 2026 Pinewood Interiors & Spaces. All rights reserved.</div>
   </div>
@@ -672,9 +681,9 @@ function hgo(i){slides[si].classList.remove('on');si=(i+slides.length)%slides.le
 hdots.children[0].classList.add('on');ht=setInterval(()=>hgo(si+1),6000);
 
 // lead form
-// ===== QUOTE EMAIL: submissions go to pinewoodinteriorsandspaces@gmail.com via FormSubmit.
+// ===== QUOTE EMAIL: submissions go to info@pinewoodinteriors.in via FormSubmit.
 // The value below is FormSubmit's private alias for that inbox (keeps the address hidden from spam bots).
-const QUOTE_EMAIL='1c9322d9d599e22b30864c0d75250aa1';
+const QUOTE_EMAIL='6ad6db432d8f84ff24621dbddc6ddd59';
 (()=>{const f=document.getElementById('leadForm'),err=document.getElementById('fErr'),btn=document.getElementById('fBtn');
 const msgs={Name:'Please enter your name.',Mobile:'Please enter a valid 10-digit mobile number.',Pincode:'Please enter a valid Bangalore pincode (56xxxx).','Home type':'Please select your home type.',Budget:'Please select a budget.'};
 f.querySelectorAll('input,select').forEach(el=>el.addEventListener('input',()=>{el.classList.remove('bad');err.textContent=''}));
@@ -779,8 +788,8 @@ set();addEventListener('load',set);let t;addEventListener('resize',()=>{clearTim
 cards.forEach((_,i)=>{const b=document.createElement('button');b.setAttribute('aria-label','Style '+(i+1));b.onclick=()=>go(i);dots.appendChild(b)});
 function render(){const w=root.clientWidth,step=Math.min(w*0.24,260);
   cards.forEach((c,i)=>{let o=i-cur;if(o>n/2)o-=n;if(o<-n/2)o+=n;const a=Math.abs(o);
-    c.style.transform=`translateX(${o*step}px) translateZ(${-a*170}px) rotateY(${o*-28}deg)`;
-    c.style.zIndex=100-a;c.style.opacity=a>2?0:1;c.style.filter=a?`brightness(${1-a*.18})`:'none';c.style.pointerEvents=a>2?'none':'auto';
+    c.style.transform=`translate3d(${o*step}px,0,${-a*170}px) rotateY(${o*-28}deg)`;
+    c.style.zIndex=100-a;c.style.opacity=a>2?0:1;let d=c.querySelector('.dim');if(!d){d=document.createElement('span');d.className='dim';c.appendChild(d)}d.style.opacity=a?Math.min(a*.18,.5):0;c.style.pointerEvents=a>2?'none':'auto';
     c.classList.toggle('active',o===0)});
   [...dots.children].forEach((d,i)=>d.classList.toggle('on',i===cur))}
 function go(i){cur=(i+n)%n;render();restart()}
